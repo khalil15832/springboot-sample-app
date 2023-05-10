@@ -9,8 +9,8 @@ spec:
  ports:
  - name: test
    protocol: TCP
-   port: 8085
-   targetPort: 8085
+   port: 8080
+   targetPort: 8080
    nodePort: 31110
 ---
 apiVersion: apps/v1 
@@ -33,4 +33,4 @@ spec:
     - name: spring-boot 
       image: khalil15832/spring-boot:latest
       ports:
-      - containerPort: 8085
+      - containerPort: 8080
